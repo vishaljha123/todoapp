@@ -1,0 +1,5 @@
+<ul>
+{% for todo in todos %}
+<li><a href="/todos/details/{{todo.id}}"{{ todo.title}}:</a>         {{todo.description}}    {{todo.status}}  {{ todo.created_at}}</li>
+{% endfor %}
+</ul>
